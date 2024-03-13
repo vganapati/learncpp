@@ -6,6 +6,8 @@
 *.lo
 *.o
 *.obj
+a.out*
+.DS_Store
 
 # Precompiled Headers
 *.gch
@@ -30,3 +32,6 @@
 *.exe
 *.out
 *.app
+
+*.json
+*Info.plist
