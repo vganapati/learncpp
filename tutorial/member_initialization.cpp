@@ -4,19 +4,19 @@ using namespace std;
 
 class Circle
 {
+  protected:
     double radius;
-  public:
     Circle (double r) : radius (r) {}
+    Circle () {}
     double area() {return radius*radius*3.14;}
 };
 
-class Cylinder
+class Cylinder:Circle
 {
-    Circle base;
     double height;
   public:
-    Cylinder(double r, double h) : base(r), height(h) {}
-    double volume() {return base.area() * height;}
+    Cylinder(double r, double h) : height(h) {radius=r;}
+    double volume() {return area() * height;}
 };
 
 int main ()
